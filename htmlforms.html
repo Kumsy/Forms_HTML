@@ -33,7 +33,55 @@
                 <td>Canary</td>
                 <td>$11.99</td>
             </tr>
-
         </table>
+
+        <p>Place your orders here! You know you want to......</p>
+
+        <form action="https://ubermelon-order-form.herokuapp.com/process" method="POST"><p>
+
+           First Name: <input type="text" name="firstname" placeholder="Jeff"></p>
+      <!--   </form>
+        <form> --><p>
+            Last Name: <input type="text" name="lastname" placeholder="Goldblum"></p>
+      <!--   </form>
+        <form>  -->Melon Type
+           <select name="Melon Type">
+               <option value = "Watermelon"> Watermelon</option>
+               <option value="Canteloupe"> Canteloupe</option>
+               <option value="Crenshaw"> Crenshaw</option>
+               <option value ="Honeydew"> Honeydew</option>
+               <option value = "Canary"> Canary</option>
+           </select>
+     <!--    </form>
+
+        <form> --><p>
+            Quantity*: <input type="text" name="quantity" placeholder="Nine Billion"></p>
+   <!--      </form>
+
+        <form> -->
+            Delivery Time: 
+            <input type="radio" name="time" value="am">12am-12pm
+            <input type="radio" name="time" value="pm">12pm-12am
+            <input type="radio" name="time" value="wat">Time is like, totally an illusion, bro
+ <!--        </form>
+
+        <form> --><p>
+            Returning Customer:
+            <input type="radio" name="returning" value="Yes">Yes
+            <input type="radio" name="returning" value="No">No</p>
+       <!--  </form>
+
+        <form> -->
+            <br>For Statistical Purposes, <br>Please Identify Your Patronus:
+            <input type="checkbox" name="stats" value="cat">Cat
+            <input type="checkbox" name="stats" value="dog">Dog
+            <input type="checkbox" name="stats" value="flying_squirrel">Flying Squirrel
+            <input type="checkbox" name="stats" value="squid">A giant squid named Larry
+        <!-- </form> -->
+
+           <p> <input type="submit" name="submit"></p>
+        </form>
+
+        <footer>*Quantities are given by fiat.</footer>
     </body>
 </html>
